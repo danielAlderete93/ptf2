@@ -1,8 +1,6 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
+
+  <navBarLayout/>
   <router-view/>
 </template>
 
@@ -17,14 +15,28 @@
 
 nav {
   padding: 30px;
+  background: black;
 }
 
 nav a {
   font-weight: bold;
-  color: #2c3e50;
+  color: #b4b5ba;
+  transition: all .1s ease-in-out;
+}
+
+nav a:hover {
+  color: white;
+  transition: all .1s ease-in-out;
 }
 
 nav a.router-link-exact-active {
-  color: #42b983;
+  color: white;
 }
 </style>
+<script>
+import navBarLayout from "@/modules/shared/layouts/NavBarLayout";
+
+export default {
+  components: {navBarLayout}
+}
+</script>

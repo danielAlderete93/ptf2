@@ -1,0 +1,5 @@
+-colores
+primario: #008738 -> Verde
+secundario: #38d430 -> verde claro
+negro:#000000
+negro: #000b01
